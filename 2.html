@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>signup</title>
+</head>
+<script>
+function redirect() {
+    var x = document.getElementById("sign-up").value;
+    if(x == "volunteer")
+    {
+        location.href = "3.html";
+    }
+    else
+    {
+        location.href = "4.html";
+    }
+}
+</script>
+<body>
+<center>
+<u>Online Volnteering System</u><br><br><br>
+<form action="javascript:redirect();">
+Name<input type=text size=20 maxlength=15 name=t1><sup>*</sup><br>
+Email-Id<input type=text size=25 maxlength=25 name=t2><sup>*</sup><br>
+Password<input type=password id=paswrd><br>
+Confirm password<input type=password id=paswrd><br>
+SIGN UP as
+<input type="radio" name="sign" id="sign-up" value="volunteer" required>
+      <label for="sign-up">Volunteer</label>
+<input type="radio" name="sign" id="sign-up" value="organization" required>
+      <label for="sign-up">Organisation</label>
+
+
+
+
+
+
+
+<br>
+<input type="submit"  value="save">
+<input type=button value=cancel>
+</form>
+</center>
+</body>
+</html>
