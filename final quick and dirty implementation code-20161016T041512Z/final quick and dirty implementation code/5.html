@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>login</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1,h2,h3 {
+	color:white;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+a {
+	font-size: 20;
+	color:#4CAF50;
+}
+input[type=text], textarea, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function organization(){
+	location.href="14.html";
+}
+function volunteer(){
+	location.href="7.html";
+}
+</script>
+<body>
+<center>
+<br>
+<h1>Login Here</h1><br><br>
+<input type=text size=25 maxlength=25 name=t7 placeholder="Enter E-mail ID"><br>
+<input type=text placeholder="Enter Password" id=paswrd><br>
+<input type=button class="button" value=Volunteer onclick="javascript:volunteer();">&nbsp&nbsp
+<input type=button class="button" value=Organization onclick="javascript:organization();">&nbsp&nbsp
+<input type=button class="button" value=cancel><br>
+<a href=6.html>forgot password?</a>
+</center>
+</body>
+</html>

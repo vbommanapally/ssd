@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>organization login
+</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1 {
+	color:white;
+}
+label {
+	font-size: 30;
+	color: white ;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text],input[type=submit], input[type=checkbox], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function posted(){
+	
+	window.alert("New volunteer Opportunity Added in the Catalog Successfully.");
+	location.href="14.html";
+}
+function back(){
+	location.href="14.html";
+}
+</script>
+<body>
+<center>
+<h1>Post A New Volunteer Opportunity</h1>
+<br><br>
+<input type=text size=10 maxlength=10 name=t1 placeholder="Enter Type Of Work">
+<br>
+<input type=text size=10 maxlength=10 name=t2 placeholder="Enter Time">
+<br>
+<input type=text size=15 maxlength=10 name=t3 placeholder="Enter Location">
+<br>
+<input type=text size=8 maxlength=7 name=t4 placeholder="Enter No.of Volunteers Required">
+<br>
+<input type=button value=post onclick="javascript:posted();"> &nbsp&nbsp&nbsp&nbsp
+<input type=button value=back onclick="javascript:back();"> 
+</center>
+</body>
+</html>

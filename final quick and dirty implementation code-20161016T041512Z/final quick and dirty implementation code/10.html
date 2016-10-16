@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>bookmark
+</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1{
+	color:white;
+}
+label {
+	color: white;
+	font-size: 30;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function view(){
+	location.href="8.html";
+}
+function back(){
+	location.href="7.html";
+}
+</script>
+<body>
+<center>
+<br>
+<h1>BOOKMARKED</h1>
+<br><br><br>
+<label>1.Volunteer Opportunity 1 </label>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type=button value=viewdetails onclick="javascript:view();">
+<br>
+<label>2.Volunteer Opportunity 2  </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type=button value=viewdetails onclick="javascript:view();">
+<br>
+<label>3.Volunteer Opportunity 3 </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type=button value=viewdetails onclick="javascript:view();">
+<br>
+<input type=button value=back onclick="javascript:back();">
+
+
+
+</center>
+</body>
+</html>

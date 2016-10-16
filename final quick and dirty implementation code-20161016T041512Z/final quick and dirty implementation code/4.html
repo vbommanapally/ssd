@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>organization</title>
+</head>
+<script>
+function onclick(){
+	window.alert("Credentials saved");
+	location.href="5.html";
+}
+</script>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1,h2,h3 {
+	color:white;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text], textarea, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<body>
+<center>
+<h1>Sign up as an Organization/Edit Profile</h1><br><br><br>
+<form action="javascript:onclick();">
+<input type=text placeholder="Enter PhoneNumber"><br>
+<textarea placeholder="About Organization"></textarea>
+<br>
+<textarea placeholder="Enter Address"></textarea>
+<br>
+<input class="button" type="submit" value=save>&nbsp&nbsp&nbsp
+<input class="button" type=button value=cancel>
+</body>

@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>search
+</title>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1{
+	color:white;
+}
+label {
+	color: white;
+	font-size: 30;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function search(){
+	location.href="7.html";
+}
+function back(){
+	location.href="7.html";
+}
+</script>
+<body>
+<center>
+<br>
+<h1>Search Volunteer Opportunities</h1>
+<BR><br>
+<label>Search by: </label><br>
+<select name=search value=search>
+<option name=search value="select">--select one--</option>
+<option name=search value="org">Orgazisation</option>
+<option name=search value="key">Keywords</option>
+<option name=search value="loc">Location</option>
+<option name=search value="time">Time</option>
+</select>
+<br>
+<input type=text size=20 maxlength=15 name=t1 placeholder="Enter Search Term">
+<br>
+<input type=button value=search onclick="javascript:search();">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type=button value=back onclick="javascript:back();">
+
+</center>
+</body>
+</html>

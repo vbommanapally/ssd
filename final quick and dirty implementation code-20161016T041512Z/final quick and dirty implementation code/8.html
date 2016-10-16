@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>volunteer opportunity
+</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1{
+	color:white;
+}
+label {
+	color: white;
+	font-size: 30;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function back(){
+	location.href="7.html";
+}
+function bookmark(){
+	location.href="10.html";
+}
+function apply(){
+	location.href="11.html";
+}
+
+</script>
+<body>
+<center>
+<br>
+<h1>Volunteer Opportunity Details</h1>
+<label>Organisation name: XYZ</label>
+<br>
+<label>Type of Work: ABC</label>
+<br>
+<label>Time: 1:00 PM to 3:00 PM</label>
+<br>
+<label>Location: WXYZ</label>
+<br>
+<label>No. of volunteers required: 10</label>
+<br>
+<input type=button value=Apply onclick="javascript:apply();">&nbsp&nbsp&nbsp
+<input type=button value=BookMark onclick="javascript:bookmark();">&nbsp&nbsp&nbsp
+<input type=button value=BackToList onclick="javascript:back();">&nbsp&nbsp&nbsp
+</center>
+</body>
+</html>

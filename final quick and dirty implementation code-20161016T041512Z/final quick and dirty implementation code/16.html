@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>View application for each post</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1 {
+	color:white;
+}
+label {
+	font-size: 30;
+	color: white ;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text],input[type=submit],  select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function confirm(){
+	
+	window.alert("Volunteers selected and Notification Requests sent");
+	location.href="14.html";
+}
+function back(){
+	location.href="14.html";
+}
+</script>
+<body>
+<center>
+<br>
+<h1>View Application Details</h1>
+<br>  
+<label>Name </label><label>AOI</label><br>
+<input type=checkbox name=selection value=a> <label>X </label><label>Sports </label><br>
+<input type=checkbox name=selection value=b> <label>Y </label><label>Volley ball</label><br>
+<input type=checkbox name=selection value=c> <label>Z </label><label>Music</label><br>
+<input type=checkbox name=selection value=d> <label>A </label><label>Dance</label><br>
+<input type=button value=select onclick="javascript:confirm();">
+<input type=button value=back onclick="javascript:back();">
+</center>
+</body>
+</html>

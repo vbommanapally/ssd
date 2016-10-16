@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>login screen
+</title>
+</head>
+<style>
+body {
+	height:100%;
+   	width:100%;
+   	background-image:url("background2.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+h1,h2,h3 {
+	color:white;
+}
+td,th {
+	font-size: 30;
+	color: white ;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text],input[type=submit] textarea, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align:center;
+}
+</style>
+<script>
+function search(){
+	location.href="9.html";
+}
+function update(){
+	location.href="3.html";
+}
+function applied()
+{
+	location.href="11.html";
+}
+function bookmarked(){
+	location.href="10.html";
+}
+function review(){
+	location.href="13.html";
+}
+function logout(){
+	window.alert("Logged Out Successfuly");
+	location.href="1.html";
+}
+</script>
+<body>
+<center>
+<h1>Volunteer Login screen</h1>
+<table border=3px bordercolor="white">
+<tr><td>Available Volunteer Opportunities&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type=button value="Logout" onclick="javascript:logout();"></td></tr>
+<tr><td>
+<input type=button value="Update Profile" onclick="javascript:update();">
+<input type=button value="Search By Keywords" onclick="javascript:search();">
+<input type=button value="Applied Opportunities" onclick="javascript:applied();">
+<input type=button value="Bookmarked Opportunities" onclick="javascript:bookmarked();">
+<input type=button value="Review Organization" onclick="javascript:review();">
+</td></tr>
+<tr><td>1. Volunteer Opportunity1   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href ="8.html" target=_self>
+	<input type=button value=details></a></td></tr>
+<tr><td>2. Volunteer Opportunity2  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href ="8.html" target=_self>
+	<input type=button value=details></a></td></tr>
+<tr><td>3. Volunteer Opportunity3  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href ="8.html" target=_self>
+	<input type=button value=details></a></td></tr>
+<tr><td>4. Volunteer Opportunity4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href ="8.html" target=_self>
+	<input type=button value=details></a></td></tr>
+<tr><td>5. Volunteer Opportunity5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href ="8.html" target=_self>
+	<input type=button value=details></a></td></tr>
+
+
+
+<tfoot><tr><td>
+<center>
+<input type=button value=prev>
+
+	<input type=button value=next></center></center></td></tr></tfoot>
+</table>
+
+</center>
+</body>
+</html>
